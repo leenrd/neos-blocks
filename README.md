@@ -1,23 +1,45 @@
-# Nextra Docs Template 
+# neos-blocks-ui docs
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+🌟 A simple ui-blocks library built on components from https://ui.shadcn.com/docs/components
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+> [!Important]
+>
+> I'm currently adding more blocks and extend some components from shadcn-ui
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+### Usage
 
-## Quick Start
+Import the component you wanna use.
 
-Click the button to clone this repository and deploy it on Vercel:
+```
+import { Navbar } from "neos-blocks";
+```
 
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
+Render it on jsx.
 
-## Local Development
+```
+<Navbar variant={"sticky"}>Neos</Navbar>
+```
 
-First, run `pnpm i` to install the dependencies.
+That's it! 🥸
 
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
+### Features
 
-## License
+- Tree-shakeable (components you don't use won't be included in your bundle)
+- Dark mode support
+- Override library styles with your own using tailwindcss or your own css
 
-This project is licensed under the MIT License.
+### Installation
+
+Install the library as a module using NPM
+
+```
+npm i neos-blocks
+```
+
+Import the following in your app.tsx
+
+```
+import 'neos-blocks/dist/style.css'
+```
+
+That's it! 🔥, you can now start importing components from the neos-library : [docs links]

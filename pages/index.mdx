@@ -1,11 +1,51 @@
 # Introduction
- 
-Welcome to Nextra! This is a basic docs template. You can use it as a starting point for your own project :)
 
-## What is Nextra?
+Building blocks for your next project to ship fast. Build on top of shadcn-ui. <br />
+Neos is a simple react ui-blocks library built on components from https://ui.shadcn.com/docs/components
 
-A **simple**, **powerful** and **flexible** site generation framework with everything you love from Next.js.
+---
+
+### Installation
+
+Install the library as a module using NPM
+
+```
+npm i neos-blocks
+```
+
+Import the following in your app.tsx
+
+```
+import 'neos-blocks/dist/style.css'
+```
+
+That's it! 🔥, you can now start importing components from the neos-library
+
+---
+
+### How do i use this?
+
+Pick the components you need from the documentation.
+Import the component you wanna use.
+
+```
+import { Navbar } from "neos-blocks";
+```
+
+Render it on jsx.
+
+```
+<Navbar variant={"sticky"}>Neos</Navbar>
+```
+
+That's it! 🥸
+
+### Features
+
+- Tree-shakeable (components you don't use won't be included in your bundle)
+- Dark mode support
+- Override library styles with your own using tailwindcss or your own css
 
 ## Documentation
 
-The documentation is available at [https://nextra.site](https://nextra.site).
+More about the documentation template at [https://nextra.site](https://nextra.site).
