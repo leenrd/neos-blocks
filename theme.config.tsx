@@ -29,7 +29,14 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: "https://github.com/github.com/leenrd/neos-blocks",
   footer: {
-    text: "Neos Blocks",
+    text: (
+      <div className="flex w-full flex-col items-center sm:items-start">
+        <span className="mb-7 text-semibold">Neos Blocks</span>
+        <p className="mt-6 text-xs">
+          © {new Date().getFullYear()} Leenard Zarate, All rights reserved.
+        </p>
+      </div>
+    ),
   },
 };
 
