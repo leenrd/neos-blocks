@@ -5,7 +5,7 @@ export function Announcement() {
   return (
     <>
       <Link
-        to={""}
+        to={"https://github.com/leenrd/neos-blocks"}
         className="inline-flex items-center rounded-lg bg-muted px-3 py-1 text-sm font-medium mb-10"
       >
         <span>or check out on github</span>

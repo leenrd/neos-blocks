@@ -15,7 +15,7 @@ const Home: FC<HomeProps> = () => {
   return (
     <article>
       <PageHeader>
-        <img alt="pic" src="./deck-gallery-man.gif" className="w-72 mb-4" />
+        <img alt="pic" src="./deck-gallery-man.gif" className="w-60 my-7" />
         <PageHeaderHeading className="max-w-xl">
           TailwindCSS and shadcn/ui UI Kit for React
         </PageHeaderHeading>
