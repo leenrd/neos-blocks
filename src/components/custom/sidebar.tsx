@@ -20,13 +20,15 @@ const Sidebar: FC<SidebarProps> = ({ className }) => {
               </h2>
             </Link>
             <div className="space-y-1">
-              <Button
-                variant="link"
-                size={"sm"}
-                className="w-full justify-start"
-              >
-                Installation
-              </Button>
+              <Link to={"/docs"}>
+                <Button
+                  variant="link"
+                  size={"sm"}
+                  className="w-full justify-start"
+                >
+                  Installation
+                </Button>
+              </Link>
               <Button
                 variant="link"
                 size={"sm"}
