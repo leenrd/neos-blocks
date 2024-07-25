@@ -1,6 +1,6 @@
 const Installation = () => {
   return (
-    <section>
+    <section className="p-1">
       <article className="space-y-10">
         <header className="space-y-4">
           <h1 className="leading-4 font-bold text-2xl">Installation</h1>

@@ -14,11 +14,9 @@ const Sidebar: FC<SidebarProps> = ({ className }) => {
       <div className="space-y-4 py-4">
         <ScrollArea className="h-full">
           <div className="px-4 py-2">
-            <Link to={"/"} className="flex items-start">
-              <h2 className="mb-2 pl-3 text-lg font-semibold tracking-tight">
-                Getting Started
-              </h2>
-            </Link>
+            <h2 className="mb-2 pl-3 text-lg font-semibold tracking-tight">
+              Getting Started
+            </h2>
             <div className="space-y-1">
               <Link to={"/docs"}>
                 <Button
@@ -29,20 +27,33 @@ const Sidebar: FC<SidebarProps> = ({ className }) => {
                   Installation
                 </Button>
               </Link>
-              <Button
-                variant="link"
-                size={"sm"}
-                className="w-full justify-start"
-              >
-                Changelogs
-              </Button>
-              <Button
-                variant="link"
-                size={"sm"}
-                className="w-full justify-start"
-              >
-                About
-              </Button>
+              <Link to={"changelog"}>
+                <Button
+                  variant="link"
+                  size={"sm"}
+                  className="w-full justify-start"
+                >
+                  Changelogs
+                </Button>
+              </Link>
+              <Link to={"about"}>
+                <Button
+                  variant="link"
+                  size={"sm"}
+                  className="w-full justify-start"
+                >
+                  About
+                </Button>
+              </Link>
+              <Link to={"credits"}>
+                <Button
+                  variant="link"
+                  size={"sm"}
+                  className="w-full justify-start"
+                >
+                  Credits
+                </Button>
+              </Link>
             </div>
           </div>
         </ScrollArea>

@@ -3,6 +3,9 @@ import NotFoundPage from "@/pages/common/not-found";
 import Docs from "@/pages/docs";
 import MainPage from "@/pages/main-page";
 import Installation from "@/pages/installation";
+import Changelog from "@/pages/changelog";
+import About from "@/pages/about";
+import Credits from "@/pages/getting-started/credits";
 
 export default [
   {
@@ -22,6 +25,18 @@ export default [
           {
             index: true,
             element: <Installation />,
+          },
+          {
+            path: "changelog",
+            element: <Changelog />,
+          },
+          {
+            path: "about",
+            element: <About />,
+          },
+          {
+            path: "credits",
+            element: <Credits />,
           },
         ],
       },
