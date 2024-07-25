@@ -1,5 +1,4 @@
 import { FC } from "react";
-import { Button } from "../ui/button";
 import { Link } from "react-router-dom";
 
 interface NavbarProps {
@@ -43,13 +42,13 @@ const Navbar: FC<NavbarProps> = () => {
             Components
           </Link>
           <Link
-            to={"/"}
+            to={"docs/changelog"}
             className="inline-flex items-center justify-center whitespace-nowrap  text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
           >
             Changelog
           </Link>
           <Link
-            to={"/"}
+            to={"docs/about"}
             className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
           >
             About
@@ -57,15 +56,12 @@ const Navbar: FC<NavbarProps> = () => {
         </div>
         <div className="hidden items-center gap-1 md:flex">
           <Link
-            to={"/"}
+            to={"/docs"}
             className="inline-flex items-center justify-center whitespace-nowrap  text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-9 rounded-md px-3"
           >
             Get Started
           </Link>
         </div>
-        <Button className="inline-flex p-1.5 md:hidden">
-          <span className="sr-only">Open Menu</span>
-        </Button>
       </div>
     </header>
   );

@@ -1,11 +1,12 @@
 import Home from "@/pages/home";
 import NotFoundPage from "@/pages/common/not-found";
-import Docs from "@/pages/docs";
+import Docs from "@/pages/getting-started/docs";
 import MainPage from "@/pages/main-page";
-import Installation from "@/pages/installation";
-import Changelog from "@/pages/changelog";
-import About from "@/pages/about";
+import Installation from "@/pages/getting-started/installation";
+import Changelog from "@/pages/getting-started/changelog";
+import About from "@/pages/getting-started/about";
 import Credits from "@/pages/getting-started/credits";
+import ComponentPage from "@/pages/components";
 
 export default [
   {
@@ -37,6 +38,10 @@ export default [
           {
             path: "credits",
             element: <Credits />,
+          },
+          {
+            path: "component/:id",
+            element: <ComponentPage />,
           },
         ],
       },

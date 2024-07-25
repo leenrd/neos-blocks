@@ -27,11 +27,11 @@ const Installation = () => {
             <code>{`import { Button } from 'neos-blocks';
 
 export default function Home() {
-return (
-    <div>
-    <Button>Click me</Button>
-    </div>
-)
+  return (
+      <div>
+        <Button>Click me</Button>
+      </div>
+  )
 }
             `}</code>
           </pre>
