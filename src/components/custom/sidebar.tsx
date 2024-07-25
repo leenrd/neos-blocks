@@ -13,7 +13,7 @@ const Sidebar: FC<SidebarProps> = ({ className }) => {
   return (
     <div className={cn("pb-12 border-r h-screen", className)}>
       <div className="space-y-4 py-4">
-        <ScrollArea className="h-full">
+        <ScrollArea className="h-screen pb-6">
           <section className="">
             <div className="px-4 py-2">
               <h2 className="mb-2 pl-3 text-lg font-semibold tracking-tight">

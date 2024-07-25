@@ -7,6 +7,7 @@ import Changelog from "@/pages/getting-started/changelog";
 import About from "@/pages/getting-started/about";
 import Credits from "@/pages/getting-started/credits";
 import ComponentPage from "@/pages/components";
+import TestPage from "@/test-page";
 
 export default [
   {
@@ -17,6 +18,10 @@ export default [
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path: "tests",
+        element: <TestPage />,
       },
       {
         path: "/docs",
