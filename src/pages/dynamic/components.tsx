@@ -32,11 +32,9 @@ const ComponentPage = () => {
           <h2 className="leading-4 font-semibold text-xl">Preview</h2>
           <Card>
             <CardHeader>
-              <CardDescription>Card Description</CardDescription>
+              <CardDescription>Default New-york style</CardDescription>
             </CardHeader>
-            <CardContent>
-              <p>Card Content</p>
-            </CardContent>
+            <CardContent>{component.preview}</CardContent>
           </Card>
         </section>
 
@@ -49,7 +47,7 @@ const ComponentPage = () => {
 export default function Home() {
   return (
       <div>
-        <Button>Click me</Button>
+        In progress
       </div>
   )
 }`}</code>

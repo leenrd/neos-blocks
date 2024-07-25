@@ -1,6 +1,6 @@
 import { v4 as uuid } from "uuid";
 
-import { TreeNodeType } from "@/@registry/tree";
+import { TreeNodeType } from "@/@registry/components/tree";
 
 export const data: TreeNodeType[] = [
   {

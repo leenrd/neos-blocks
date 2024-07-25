@@ -6,8 +6,9 @@ import Installation from "@/pages/getting-started/installation";
 import Changelog from "@/pages/getting-started/changelog";
 import About from "@/pages/getting-started/about";
 import Credits from "@/pages/getting-started/credits";
-import ComponentPage from "@/pages/components";
+import ComponentPage from "@/pages/dynamic/components";
 import TestPage from "@/test-page";
+import TemplatePage from "@/pages/dynamic/templates";
 
 export default [
   {
@@ -47,6 +48,10 @@ export default [
           {
             path: "component/:id",
             element: <ComponentPage />,
+          },
+          {
+            path: "template/:id",
+            element: <TemplatePage />,
           },
         ],
       },

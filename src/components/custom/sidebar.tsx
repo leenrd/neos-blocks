@@ -4,6 +4,7 @@ import { Button } from "../ui/button";
 import { ScrollArea } from "../ui/scroll-area";
 import { Link } from "react-router-dom";
 import registry from "@/lib/registry";
+import templates from "@/lib/templates";
 
 interface SidebarProps {
   className?: string;
@@ -70,6 +71,24 @@ const Sidebar: FC<SidebarProps> = ({ className }) => {
               <div className="space-y-1">
                 {registry.map((item) => (
                   <Link to={`component/${item.id}`}>
+                    <Button
+                      variant="link"
+                      size={"sm"}
+                      className="w-full justify-start"
+                    >
+                      {item.name}
+                    </Button>
+                  </Link>
+                ))}
+              </div>
+
+              <h2 className="mb-2 pl-3 text-lg font-semibold tracking-tight mt-5">
+                Templates
+              </h2>
+
+              <div className="space-y-1">
+                {templates.map((item) => (
+                  <Link to={`template/${item.id}`}>
                     <Button
                       variant="link"
                       size={"sm"}

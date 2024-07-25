@@ -1,3 +1,6 @@
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { FileWarningIcon } from "lucide-react";
+
 const Installation = () => {
   return (
     <section className="p-1">
@@ -6,6 +9,16 @@ const Installation = () => {
           <h1 className="leading-4 font-bold text-2xl">Installation</h1>
           <p>How to install dependencies and structure your app.</p>
         </header>
+
+        <section className="my-3">
+          <Alert variant={"note"}>
+            <FileWarningIcon className="h-4 w-4" />
+            <AlertTitle>Heads up!</AlertTitle>
+            <AlertDescription>
+              This project is currently still in development.
+            </AlertDescription>
+          </Alert>
+        </section>
 
         <section className="space-y-4">
           <h2 className="leading-4 font-bold text-xl">Initiation</h2>
