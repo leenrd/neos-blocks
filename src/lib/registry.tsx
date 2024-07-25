@@ -19,6 +19,10 @@ import {
   RadioCardIndicator,
 } from "@/@registry/components/radio-card-group";
 import { Treeview } from "@/@registry/components/tree";
+import FileUpload from "@/@registry/components/upload-form";
+import CarouselExample from "@/@usage/carousel";
+import PasswordUsage from "@/@usage/password";
+import { timelineData, TimelineUsage } from "@/@usage/timeline";
 import { Button } from "@/components/ui/button";
 import { data } from "@/lib/tree-sample-data";
 
@@ -114,7 +118,7 @@ const components = [
   },
   {
     id: 5,
-    name: "Stepper",
+    name: "In progress",
     describe: "A simple emoji input form component.",
     init: "import {ChatBubble} from 'neos-blocks';",
     preview: <></>,
@@ -149,6 +153,34 @@ const components = [
     describe: "A simple emoji input form component.",
     init: "import {ChatBubble} from 'neos-blocks';",
     preview: <GoogleForm />,
+  },
+  {
+    id: 9,
+    name: "Password Form",
+    describe: "A simple emoji input form component.",
+    init: "import {ChatBubble} from 'neos-blocks';",
+    preview: <PasswordUsage />,
+  },
+  {
+    id: 10,
+    name: "Upload Form",
+    describe: "A simple emoji input form component.",
+    init: "import {ChatBubble} from 'neos-blocks';",
+    preview: <FileUpload />,
+  },
+  {
+    id: 11,
+    name: "Fancy Carousel",
+    describe: "A simple emoji input form component.",
+    init: "import {ChatBubble} from 'neos-blocks';",
+    preview: <CarouselExample />,
+  },
+  {
+    id: 12,
+    name: "Timeline",
+    describe: "A simple emoji input form component.",
+    init: "import {ChatBubble} from 'neos-blocks';",
+    preview: <TimelineUsage items={timelineData} />,
   },
 ];
 

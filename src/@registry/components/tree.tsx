@@ -128,7 +128,7 @@ export const Node = function TreeNode({
     <li className="flex flex-col cursor-pointer select-none">
       <div
         className={clsx(
-          "flex items-center space-x-2 font-mono font-medium px-1 ",
+          "flex items-center space-x-2 px-1 ",
           selectedId === id ? "bg-slate-200" : "bg-transparent"
         )}
         onClick={() => {
@@ -149,9 +149,7 @@ export const Node = function TreeNode({
         ) : (
           <span className="h-4 w-4 shrink-0" />
         )}
-        <span className="text-ellipsis whitespace-nowrap overflow-hidden">
-          {name}
-        </span>
+        <span className="whitespace-nowrap overflow-hidden">{name}</span>
       </div>
       {children?.length && isOpen && (
         <ul className="pl-4">

@@ -32,4 +32,12 @@ const sources = [
     name: "shadcn-ui",
     link: "https://ui.shadcn.com/",
   },
+  {
+    name: "shadcn-extension",
+    link: "https://shadcn-extension.vercel.app/docs/carousel",
+  },
+  {
+    name: "timdehof",
+    link: "https://github.com/timDeHof/shadcn-timeline",
+  },
 ];
